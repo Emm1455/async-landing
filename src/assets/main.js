@@ -53,6 +53,7 @@ async function fetchData(urlApi){
             </div>
         </div>
         `).slice(0,4).join('')} `;
+        // También se puede acceder a la url del objeto mediante: ${video.video.['thumbnails'][3].url
         content.innerHTML = view;
     } catch (error){
         console.log(error);
